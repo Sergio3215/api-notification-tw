@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
-import cors from 'cors';
+const cors = require('cors');
 
 app.use(cors({ origin: "*" }));
 
