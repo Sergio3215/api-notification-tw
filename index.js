@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
+import cors from 'cors';
+
+app.use(cors({ origin: "*" }));
 
 app.route("/api/notification")
     .get((req, res) => {
